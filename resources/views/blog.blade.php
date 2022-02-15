@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+@extends ('layout')
 
-<head>
-    <link rel="stylesheet" href="/css/stylesheet.css" text="text/css">
-</head>
-
-<body>
-    <nav>
-        <div class="sidebar">
-            <a href="/">Home</a>
-            <a href="profile">Mijn profiel</a>
-            <a class="active" href="blog">Blog</a>
-            <a href="dashboard">Dashboard</a>
-            <a href="faq">FAQ</a>
-            <a href="school">School</a>
-        </div>
-    </nav>
-</body>
+@section ('content')
 <main>
     <div class="content">
         <h1>Blog</h1>

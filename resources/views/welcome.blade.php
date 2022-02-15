@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+@extends ('layout')
 
-<head>
-    <link rel="stylesheet" href="/css/stylesheet.css" text="/text/css">
-</head>
-
-<body>
-    <nav>
-        <div class="sidebar">
-            <a class="active" href="/">Home</a>
-            <a href="profile">Mijn profiel</a>
-            <a href="blog">Blog</a>
-            <a href="dashboard">Dashboard</a>
-            <a href="faq">FAQ</a>
-            <a href="school">School</a>
-        </div>
-    </nav>
+@section ('content')
     <div class="content">
         <h1> Welkom</h1>
 
@@ -71,8 +55,3 @@
             </article>
         </main>
     </div>
-</body>
-
-
-
-</html>

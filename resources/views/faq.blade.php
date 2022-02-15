@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+@extends ('layout')
 
-<head>
-    <link rel="stylesheet" href="/css/stylesheet.css" text="text/css">
-</head>
-
-<body>
-    <nav>
-        <div class="sidebar">
-            <a href="/">Home</a>
-            <a href="profile">Mijn profiel</a>
-            <a href="blog">Blog</a>
-            <a href="dashboard">Dashboard</a>
-            <a class="active" href="faq">FAQ</a>
-            <a href="school">School</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> </a>
-        </div>
-    </nav>
-</body>
+@section ('content')
 <div class="content">
     <h1>FAQ</h1>
     <main>

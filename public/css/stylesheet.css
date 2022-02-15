@@ -17,6 +17,9 @@ body {
     width: 150px;
     background-color: rgb(69, 0, 83);
     position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
     height: 100%;
     overflow: auto;
     font-size: 20px;
