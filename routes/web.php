@@ -25,14 +25,22 @@ Route::get('/profile', [ProfileController::class, 'show']);
 
 Route::get('/blog', [BlogController::class, 'show']);
 
-Route::get('/faq', [FaqController::class, 'show']);
-
 Route::get('/dashboard', [DashboardController::class, 'show']);
 
 Route::get('/school', [SchoolController::class, 'show']);
 
-Route::post('/faq', [FaqController::class, 'store']);
+Route::resource('faq', FaqController::class);
 
-Route::get('/faq/create', [FaqController::class, 'create']);
+// Route::get('/faq', [FaqController::class, 'index']);
+
+// Route::post('/faq', [FaqController::class, 'store']);
+
+// Route::get('/faq/create', [FaqController::class, 'create']);
+
+// Route::get('/faq/{id}/edit', [FaqController::class, 'edit']);
+
+// Route::put('/faq/{id}', [FaqController::class, 'update']);
+
+// Route::delete('/faq/{id}', [FaqController::class, 'destroy']);
 
 // Route::get('/profile', 'ProfileController@show');
