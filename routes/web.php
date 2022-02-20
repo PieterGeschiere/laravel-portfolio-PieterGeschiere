@@ -31,4 +31,8 @@ Route::get('/dashboard', [DashboardController::class, 'show']);
 
 Route::get('/school', [SchoolController::class, 'show']);
 
+Route::post('/faq', [FaqController::class, 'store']);
+
+Route::get('/faq/create', [FaqController::class, 'create']);
+
 // Route::get('/profile', 'ProfileController@show');

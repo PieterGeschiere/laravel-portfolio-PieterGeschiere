@@ -8,13 +8,24 @@
             Hier is een tabel te zien met alle toetsen en de mogelijke studiepunten.
         </p>
         <table>
+
             <tr>
                 <th>Quartile</th>
-                <th>Couse</th>
+                <th>Course</th>
                 <th>EC</th>
                 <th>Exam</th>
                 <th>Grade</th>
             </tr>
+
+            @foreach($grades as $grade)
+            <tr>
+                <td>0</td>
+                <td>{{$grade->course_name}}</td>
+                <td>yes</td>
+                <td>{{$grade->test_name}}</td>
+                <td>{{$grade->best_grade}}</td>
+            </tr>
+            @endforeach
             <tr>
                 <td rowspan="3">0</td>
                 <td rowspan="3">Personal Professional Development</td>
