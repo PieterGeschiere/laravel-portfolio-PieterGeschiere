@@ -2,7 +2,6 @@
 
 @section ('content')
 <main>
-    <div class="content">
         <h1>
             School links
         </h1>
@@ -18,7 +17,6 @@
                 target="_blank">Teams omgeving</a></p>
         <p><a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank">studievoortgang</a></p>
         <p><a href="https://github.com/HZ-HBO-ICT" target="_blank">Github omgeving</a></p>
-    </div>
 </main>
 
-</html>
+@endsection

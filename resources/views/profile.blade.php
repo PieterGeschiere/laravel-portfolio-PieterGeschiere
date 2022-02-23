@@ -1,9 +1,7 @@
 @extends ('layout')
 
 @section ('content')
-    <div class="content">
         <h1>Mijn Profiel</h1>
-
         <main>
             <article>
                 <p>
@@ -47,9 +45,6 @@
                     <li>Konosuba</li>
                     <li>Toaru (index, railgun, accelerator)</li>
                 </ul>
-
             </article>
         </main>
-    </div>
-
-</html>
+@endsection

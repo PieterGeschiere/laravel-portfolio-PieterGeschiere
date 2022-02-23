@@ -2,7 +2,6 @@
 
 @section ('content')
 <main>
-    <div class="content">
         <h1>Dashboard</h1>
         <p>
             Hier is een tabel te zien met alle toetsen en de mogelijke studiepunten.
@@ -123,7 +122,5 @@
         <p>
             60 maximaal
         </p>
-    </div>
 </main>
-
-</html>
+@endsection

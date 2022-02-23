@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
+use Illuminate\Http\Request;
 
 class FaqController
 {
@@ -18,41 +19,37 @@ class FaqController
         return view('faq.create');
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        $faq = new Faq();
-        $faq->question = request('question');
-        $faq->answer = request('answer');
-        $faq->save();
-        return redirect('/faq');
+        Faq::create([
+            'question' => $request->question,
+            'answer' => $request->answer,
+        ]);
+
+        return redirect()->route('faq.index');
     }
 
-    public function edit($id)
+    public function edit(Faq $faq)
     {
-        $faq = Faq::find($id);
-
         return view('faq.edit', compact('faq'));
     }
 
-    public function update($id)
+    public function update(Faq $faq)
     {
-        $faq = Faq::find($id);
-
-        $faq->question = request('question');
-        $faq->answer = request('answer');
+        $faq->question = $request->question;
+        $faq->answer = $request->answer;
         $faq->save();
 
-        return redirect('/faq');
+        return redirect()->route('faq.show', $faq->id);
     }
 
-    public function destroy($faq) {
-        $faq = Faq::find($faq);
+    public function destroy(Faq $faq)
+    {
         $faq->delete();
-
-        return redirect('/faq');
+        return redirect()->route('faq.index');
     }
 
-    public function show(){
-
+    public function show(Faq $faq){
+        return view('faq.show', compact('faq'));
     }
 }

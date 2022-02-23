@@ -1,19 +1,18 @@
 @extends ('layout')
 
 @section ('content')
-<div class="content">
     <div id="wrapper">
         <div id="page" class="container">
-            <h1>New Article</h1>
+            <h1>New Question</h1>
 
-            <form method="POST" action="/faq">
+            <form method="POST" action="{{route('faq.create');}}">
                 @csrf
 
                 <div class="field">
                     <label class="label" for="">Title</label>
 
                     <div class="control">
-                        <input class="input" type="text" name="question" id="question"
+                        <input class="input" type="text" name="question" id="question" required>
                     </div>
                 </div>
 
@@ -34,5 +33,4 @@
             </form>
         </div>
     </div>
-</div>
 @endsection

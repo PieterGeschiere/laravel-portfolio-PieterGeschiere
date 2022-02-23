@@ -1,12 +1,11 @@
 @extends ('layout')
 
 @section ('content')
-<div class="content">
     <div id="wrapper">
         <div id="page" class="container">
             <h1>Update Question</h1>
 
-            <form method="POST" action="/faq/{{ $faq->id }}">
+            <form method="POST" action="{{route('faq.update', $faq->id);}}">
                 @csrf
                 @method('PUT')
 
@@ -14,7 +13,7 @@
                     <label class="label" for="">Title</label>
 
                     <div class="control">
-                        <input class="input" type="text" name="question" id="question" value="{{ $faq->question }}">
+                        <input class="input" type="text" name="question" id="question" required value="{{ $faq->question }}">
                     </div>
                 </div>
 
@@ -22,7 +21,7 @@
                     <label class="label" for="answer">Answer</label>
 
                     <div class="control">
-                        <textarea class="textarea" name="answer" id="answer">{{ $faq->answer }}</textarea>
+                        <textarea class="textarea" name="answer" id="answer" required>{{ $faq->answer }}</textarea>
                     </div>
                 </div>
 
@@ -33,7 +32,7 @@
                 </div>
 
             </form>
-            <form method="POST" action="/faq/{{ $faq->id }}">
+            <form method="POST" action="{{route('faq.destroy', $faq->id);}}">
                 @csrf
                 @method('DELETE')
 
@@ -41,5 +40,4 @@
             </form>
         </div>
     </div>
-</div>
 @endsection

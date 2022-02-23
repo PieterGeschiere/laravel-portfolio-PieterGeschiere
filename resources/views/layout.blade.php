@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="/css/stylesheet.css" text="/text/css">
 </head>
 <body>
-    @extends ('navigation')
-    @yield ('content')
+    @include ('navigation')
+    <div class="content">
+        @yield ('content')
+    </div>
 </body>
 </html>

@@ -1,7 +1,6 @@
 @extends ('layout')
 
 @section ('content')
-<div class="content">
     <h1>FAQ</h1>
     <main>
         @foreach($faqs as $faq)
@@ -13,7 +12,6 @@
             </div>
         @endforeach
     </main>
-</div>
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
@@ -30,5 +28,4 @@
         });
     }
 </script>
-
-</html>
+@endsection

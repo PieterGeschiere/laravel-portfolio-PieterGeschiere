@@ -2,7 +2,6 @@
 
 @section ('content')
 <main>
-    <div class="content">
         <h1>Blog</h1>
 
         <button type="button" class="collapsible">Studiekeuze</button>
@@ -45,7 +44,6 @@
                     target="_blank">Klik hier voor het artikel</a>
             </p>
         </div>
-    </div>
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
@@ -63,5 +61,4 @@
         }
     </script>
 </main>
-
-</html>
+@endsection

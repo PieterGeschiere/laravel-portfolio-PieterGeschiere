@@ -1,9 +1,7 @@
 @extends ('layout')
 
 @section ('content')
-    <div class="content">
         <h1> Welkom</h1>
-
         <main>
             <article>
                 <p>
@@ -54,4 +52,4 @@
 
             </article>
         </main>
-    </div>
+@endsection
