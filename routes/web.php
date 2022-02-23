@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SchoolController;
+use App\Http\Controllers\GradeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,5 @@ Route::get('/dashboard', [DashboardController::class, 'show']);
 Route::get('/school', [SchoolController::class, 'show']);
 
 Route::resource('faq', FaqController::class);
+
+Route::resource('grade', GradeController::class);
