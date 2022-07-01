@@ -2,12 +2,14 @@
 
 @section ('content')
     <h1>FAQ</h1>
+    <a class="{{ Request::path() === '/faq/create' ? 'active' : ''}}" href="/faq/create">Create</a>
     <main>
         @foreach($faqs as $faq)
             <button type="button" class="collapsible">{{$faq->question;}}</button>
             <div class="colcontent">
                 <p>
                     {!!$faq->answer;!!}
+                    <a href="{{ route('faq.show', $faq)}}">Show</a>
                 </p>
             </div>
         @endforeach

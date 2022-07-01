@@ -26,10 +26,12 @@ Route::get('/profile', [ProfileController::class, 'show']);
 
 Route::get('/blog', [BlogController::class, 'show']);
 
-Route::get('/dashboard', [DashboardController::class, 'show']);
+Route::get('/dashboard', [DashboardController::class, 'show'])->middleware('auth');
 
 Route::get('/school', [SchoolController::class, 'show']);
 
-Route::resource('faq', FaqController::class);
+Route::resource('faq', FaqController::class)->middleware('auth');
 
-Route::resource('grade', GradeController::class);
+Route::resource('grade', GradeController::class)->middleware('auth');
+
+require __DIR__.'/auth.php';
