@@ -34,7 +34,7 @@ class FaqController
         return view('faq.edit', compact('faq'));
     }
 
-    public function update(Faq $faq)
+    public function update(Request $request, Faq $faq)
     {
         $faq->question = $request->question;
         $faq->answer = $request->answer;

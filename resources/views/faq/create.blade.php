@@ -5,7 +5,7 @@
         <div id="page" class="container">
             <h1>New Question</h1>
 
-            <form method="POST" action="{{route('faq.create');}}">
+            <form method="POST" action="{{route('faq.index')}}">
                 @csrf
 
                 <div class="field">
