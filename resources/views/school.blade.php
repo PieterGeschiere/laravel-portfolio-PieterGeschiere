@@ -18,5 +18,4 @@
         <p><a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank">studievoortgang</a></p>
         <p><a href="https://github.com/HZ-HBO-ICT" target="_blank">Github omgeving</a></p>
 </main>
-
 @endsection

@@ -9,7 +9,7 @@
                 </p>
                 <p>
                     Vorig jaar heb ik fysiotherapie gestudeert maar ik ben er toen achter gekomen dat het
-                    toch niet helemaal bij mij pasten.
+                    toch niet helemaal bij mij past.
                     Daarna ben ik verder gaan zoeken naar wat bij mij zou passen.
                     Uiteindelijk dacht ik ik ga HBO ICT doen bij de HZ.
                     Ik koos hiervoor omdat ik al vanaf jonge leeftijd interesse heb gehad in computers en games, dus ik
