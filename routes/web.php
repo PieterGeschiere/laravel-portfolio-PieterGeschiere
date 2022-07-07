@@ -8,7 +8,7 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\GradeController;
-use App\Http\COntrollers\FireballController;
+use App\Http\Controllers\FireballController;
 
 /*
 |--------------------------------------------------------------------------
