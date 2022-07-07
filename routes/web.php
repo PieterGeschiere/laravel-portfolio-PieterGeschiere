@@ -8,6 +8,7 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\GradeController;
+use App\Http\COntrollers\FireballController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,8 @@ Route::get('/blog', [BlogController::class, 'show']);
 Route::get('/dashboard', [DashboardController::class, 'show'])->middleware('auth');
 
 Route::get('/school', [SchoolController::class, 'show']);
+
+Route::get('/fireball', [FireballController::class, 'show']);
 
 Route::resource('faq', FaqController::class)->middleware('auth');
 
