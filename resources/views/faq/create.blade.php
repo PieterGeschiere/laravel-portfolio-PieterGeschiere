@@ -20,11 +20,11 @@
                     <label class="label" for="answer">Answer</label>
 
                     <div class="control">
-                        <textarea class="textarea" name="answer" id="answer"></textarea>
+                        <textarea class="textarea" name="answer" id="answer" required></textarea>
                     </div>
                 </div>
 
-                <div class="field is-grouped"
+                <div class="field is-grouped">
                     <div class="control">
                         <button class="button is-link" type="submit">Submit</button>
                     </div>

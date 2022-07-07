@@ -117,3 +117,40 @@ ul#socials li {
         float: none;
     }
 }
+
+input[type=text], select, textarea {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+  
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input:invalid, textarea:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+
+input:focus:invalid, textarea:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
+    background-size: 25px;
+  }

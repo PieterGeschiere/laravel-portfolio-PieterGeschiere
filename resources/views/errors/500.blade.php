@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+@extends ('layout')
+
+@section ('content')
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -7,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
+    <style> background: rgb(48, 47, 47);</style>
     <div class="container mt-5 pt-5">
         <div class="alert alert-danger text-center">
             <h2 class="display-3">500</h2>
@@ -16,4 +19,4 @@
         </div>
     </div>
 </body>
-</html>
+@endsection
