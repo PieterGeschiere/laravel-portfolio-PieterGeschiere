@@ -8,8 +8,7 @@
     <title>500 Custom Error Page Example</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
-<body>
-    <style> background: rgb(48, 47, 47);</style>
+<body style = "background-color: rgb(48, 47, 47)">
     <div class="container mt-5 pt-5">
         <div class="alert alert-danger text-center">
             <h2 class="display-3">500</h2>

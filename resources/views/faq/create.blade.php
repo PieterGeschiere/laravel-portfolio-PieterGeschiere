@@ -12,7 +12,7 @@
                     <label class="label" for="">Title</label>
 
                     <div class="control">
-                        <input class="input" type="text" name="question" id="question" required>
+                        <input placeholder="Enter title" class="input" type="text" name="question" id="question" required>
                     </div>
                 </div>
 
@@ -20,7 +20,7 @@
                     <label class="label" for="answer">Answer</label>
 
                     <div class="control">
-                        <textarea class="textarea" name="answer" id="answer" required></textarea>
+                        <textarea placeholder="Enter answer" class="textarea" name="answer" id="answer" required></textarea>
                     </div>
                 </div>
 
